@@ -37,7 +37,7 @@ class BlogController extends Controller
         $blog = new Blog($request->all());
         $blog->save();
         if ($request->hasFile('cover')) {
-            $path = 'upload/blog' . $id;
+            $path = 'upload/blog' . $blog->id;
             $request->file('cover')->storeAs($path, 'cover.jpg', 'public');
         }
         return redirect()->route('admin.blog.index', ['id' => $blog->id]);
