@@ -16,7 +16,7 @@
             <nav class="main-menu navbar-expand-md navbar-light">
                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                     <ul class="navigation clearfix">
-                        <li class="current"><a href="/">Home</a></li>
+                        <li class="{{ Request::is('/') ? 'current' : null }}"><a href="/">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li ><a href="#">Pages</a></li>
                         <li class="dropdown"><a href="#">Services</a>
@@ -30,9 +30,9 @@
                                 <li><a href="#">UI/UX Designing</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ route('site.portfolio.index') }}">Portfolio</a></li>
-                        <li><a href="{{ route('site.blog.index') }}">Blog</a></li>
-                        <li><a href="{{ route('site.contact') }}">Contact</a></li>
+                        <li class="{{ Request::is('portfolio', 'portfolio/*') ? 'current' : null }}"><a href="{{ route('site.portfolio.index') }}">Portfolio</a></li>
+                        <li class="{{ Request::is('blog', 'blog/*') ? 'current' : null }}"><a href="{{ route('site.blog.index') }}">Blog</a></li>
+                        <li class="{{ Request::is('contact') ? 'current' : null }}"><a href="{{ route('site.contact') }}">Contact</a></li>
                     </ul>
                 </div>
             </nav>
