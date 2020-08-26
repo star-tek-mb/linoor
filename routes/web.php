@@ -67,4 +67,18 @@ Route::name('site.')->namespace('Site')->group(function() {
 
     Route::get('/contact', 'ContactController@index')->name('contact');
     Route::post('/contact/post', 'ContactController@post')->name('contact.post');
+
+    Route::get('/about', 'SiteController@about')->name('about');
+    Route::get('/services', 'SiteController@services')->name('services');
+    Route::get('/services/webdevelopment', 'SiteController@servicesWebDevelopment')->name('services.webdevelopment');
+    Route::get('/services/graphicdesigning', 'SiteController@servicesGraphicDesigning')->name('services.graphicdesigning');
+    Route::get('/services/digitalmarketing', 'SiteController@servicesDigitalMarketing')->name('services.digitalmarketing');
+    Route::get('/services/seo', 'SiteController@servicesSEO')->name('services.seo');
+    Route::get('/services/appdevelopment', 'SiteController@servicesAppDevelopment')->name('services.appdevelopment');
+    Route::get('/services/uidesigning', 'SiteController@servicesUiDesigning')->name('services.uidesigning');
+
+    Route::get('/pages/team', 'SiteController@pagesTeam')->name('pages.team');
+    Route::get('/pages/notfound', 'SiteController@pagesNotFound')->name('pages.notfound');
+    Route::get('/pages/faqs', 'SiteController@pagesFaqs')->name('pages.faqs');
+    Route::get('/pages/testimonials', 'SiteController@pagesTestimonials')->name('pages.testimonials');
 });
