@@ -19,8 +19,8 @@ class CreatePortfoliosTable extends Migration
             $table->string('title');
             $table->string('client');
             $table->foreignId('category_id')->nullable()->constrained()->onDelete('cascade');
-            $table->timestamp('begin');
-            $table->timestamp('end');
+            $table->timestamp('begin')->nullable();
+            $table->timestamp('end')->nullable();
             $table->text('description');
             $table->timestamps();
         });
