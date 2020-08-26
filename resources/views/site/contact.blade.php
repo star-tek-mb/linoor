@@ -15,7 +15,7 @@
                 <h1>Contact</h1>
                 <div class="page-nav">
                     <ul class="bread-crumb clearfix">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="{{ route('site.home') }}">Home</a></li>
                         <li class="active">Contact</li>
                     </ul>
                 </div>

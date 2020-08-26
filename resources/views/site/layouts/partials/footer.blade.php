@@ -10,7 +10,7 @@
                     <div class="footer-widget logo-widget">
                         <div class="widget-content">
                             <div class="logo">
-                                <a href=""><img src="/images/footer-logo.png" alt="" /></a>
+                                <a href="{{ route('site.home') }}"><img src="/images/footer-logo.png" alt="" /></a>
                             </div>
                             <div class="text">Welcome to our web design agency. Lorem ipsum simply free text dolor sited amet cons cing elit.</div>
                             <ul class="social-links clearfix">
@@ -31,11 +31,11 @@
                             <div class="row clearfix">
                                 <div class="col-md-6 col-sm-12">
                                     <ul>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Meet Our Team</a></li>
-                                        <li><a href="#">Our Portfolio</a></li>
-                                        <li><a href="#">Latest News</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="{{ route('site.about') }}">About</a></li>
+                                        <li><a href="{{ route('site.pages.team') }}">Meet Our Team</a></li>
+                                        <li><a href="{{ route('site.portfolio.index') }}">Our Portfolio</a></li>
+                                        <li><a href="{{ route('site.blog.index') }}">Latest News</a></li>
+                                        <li><a href="{{ route('site.contact') }}">Contact</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-sm-12">

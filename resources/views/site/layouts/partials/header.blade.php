@@ -6,7 +6,7 @@
     <div class="inner-container clearfix">
         <!--Logo-->
         <div class="logo-box">
-            <div class="logo"><a href="/" title="Linoor - DIgital Agency HTML Template"><img src="/images/logo.png" alt="Linoor - DIgital Agency HTML Template" title="Linoor - DIgital Agency HTML Template"></a></div>
+            <div class="logo"><a href="{{ route('site.home') }}" title="Linoor - DIgital Agency HTML Template"><img src="/images/logo.png" alt="Linoor - DIgital Agency HTML Template" title="Linoor - DIgital Agency HTML Template"></a></div>
         </div>
         <div class="nav-outer clearfix">
             <!--Mobile Navigation Toggler-->
@@ -16,18 +16,25 @@
             <nav class="main-menu navbar-expand-md navbar-light">
                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                     <ul class="navigation clearfix">
-                        <li class="{{ Request::is('/') ? 'current' : null }}"><a href="/">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li ><a href="#">Pages</a></li>
-                        <li class="dropdown"><a href="#">Services</a>
+                        <li class="{{ Request::is('/') ? 'current' : null }}"><a href="{{ route('site.home') }}">Home</a></li>
+                        <li class="{{ Request::is('about') ? 'current' : null }}"><a href="{{ route('site.about') }}">About Us</a></li>
+                        <li class="{{ Request::is('pages/*') ? 'current' : null }} dropdown"><a href="{{ route('site.pages.team') }}">Pages</a>
                             <ul>
-                                <li><a href="#">All Services</a></li>
-                                <li><a href="#">Website Development</a></li>
-                                <li><a href="#">Graphic Designing</a></li>
-                                <li><a href="#">Digital Marketing</a></li>
-                                <li><a href="#">SEO & Content Writting</a></li>
-                                <li><a href="#">App Development</a></li>
-                                <li><a href="#">UI/UX Designing</a></li>
+                                <li><a href="{{ route('site.pages.team') }}">Our Team</a></li>
+                                <li><a href="{{ route('site.pages.testimonials') }}">Testimonials</a></li>
+                                <li><a href="{{ route('site.pages.faqs') }}">FAQs</a></li>
+                                <li><a href="{{ route('site.pages.notfound') }}">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="{{ Request::is('services', 'services/*') ? 'current' : null }} dropdown"><a href="{{ route('site.services') }}">Services</a>
+                            <ul>
+                                <li><a href="{{ route('site.services') }}">All Services</a></li>
+                                <li><a href="{{ route('site.services.webdevelopment') }}">Website Development</a></li>
+                                <li><a href="{{ route('site.services.graphicdesigning') }}">Graphic Designing</a></li>
+                                <li><a href="{{ route('site.services.digitalmarketing') }}">Digital Marketing</a></li>
+                                <li><a href="{{ route('site.services.seo') }}">SEO & Content Writting</a></li>
+                                <li><a href="{{ route('site.services.appdevelopment') }}">App Development</a></li>
+                                <li><a href="{{ route('site.services.uidesigning') }}">UI/UX Designing</a></li>
                             </ul>
                         </li>
                         <li class="{{ Request::is('portfolio', 'portfolio/*') ? 'current' : null }}"><a href="{{ route('site.portfolio.index') }}">Portfolio</a></li>

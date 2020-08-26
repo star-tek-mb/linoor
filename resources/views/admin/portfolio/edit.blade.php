@@ -49,11 +49,11 @@
     </select>
     <label>Dates</label>
     <div class="input-group input-daterange">
-        <input type="text" class="form-control" name="begin" value="{{ old('begin', $portfolio->begin) }}">
+        <input type="text" class="form-control" name="begin" value="{{ old('begin', date('Y-m-d', strtotime($portfolio->begin))) }}">
         <div class="input-group-append">
             <span class="input-group-text">to</span>
         </div>
-        <input type="text" class="form-control" name="end" value="{{ old('end', $portfolio->end) }}">
+        <input type="text" class="form-control" name="end" value="{{ old('end', date('Y-m-d', strtotime($portfolio->end))) }}">
     </div>
     <div class="form-group">
         <label for="description">Description</label>

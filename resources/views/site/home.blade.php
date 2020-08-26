@@ -16,9 +16,9 @@
             </div>
             <div class="social-links">
                 <ul class="clearfix">
-                    <li><a href="index.html#"><span>Twitter</span></a></li>
-                    <li><a href="index.html#"><span>Facebook</span></a></li>
-                    <li><a href="index.html#"><span>Youtube</span></a></li>
+                    <li><a href="#"><span>Twitter</span></a></li>
+                    <li><a href="#"><span>Facebook</span></a></li>
+                    <li><a href="#"><span>Youtube</span></a></li>
                 </ul>
             </div>
         </div>
@@ -38,7 +38,7 @@
                             <div class="sub-title">Доброго пожаловать!</div>
                                         <h1>Студия <br>Разработки</h1>
                             <div class="link-box">
-                                <a class="theme-btn btn-style-one" href="about.html">
+                                <a class="theme-btn btn-style-one" href="{{ route('site.about') }}">
                                     <i class="btn-curve"></i>
                                     <span class="btn-title">Открой для себя больше</span>
                                 </a>
@@ -62,7 +62,7 @@
                             <div class="sub-title">Доброго пожаловать!</div>
                             <h1>Студия <br>Разработки</h1>
                             <div class="link-box">
-                                <a class="theme-btn btn-style-one" href="about.html">
+                                <a class="theme-btn btn-style-one" href="{{ route('site.about') }}">
                                     <i class="btn-curve"></i>
                                     <span class="btn-title">Открой для себя больше</span>
                                 </a>
@@ -95,7 +95,7 @@
                 <div class="inner-box">
                     <div class="bottom-curve"></div>
                     <div class="icon-box"><span class="flaticon-responsive"></span></div>
-                    <h6><a href="web-development.html">Website <br>Development</a></h6>
+                    <h6><a href="{{ route('site.services.webdevelopment') }}">Website <br>Development</a></h6>
                 </div>
             </div>
             <!--Service Block-->
@@ -103,7 +103,7 @@
                 <div class="inner-box">
                     <div class="bottom-curve"></div>
                     <div class="icon-box"><span class="flaticon-computer"></span></div>
-                    <h6><a href="graphic-designing.html">graphic <br>designing</a></h6>
+                    <h6><a href="{{ route('site.services.graphicdesigning') }}">graphic <br>designing</a></h6>
                 </div>
             </div>
             <!--Service Block-->
@@ -111,7 +111,7 @@
                 <div class="inner-box">
                     <div class="bottom-curve"></div>
                     <div class="icon-box"><span class="flaticon-digital-marketing"></span></div>
-                    <h6><a href="digital-marketing.html">digital <br>marketing</a></h6>
+                    <h6><a href="{{ route('site.services.digitalmarketing') }}">digital <br>marketing</a></h6>
                 </div>
             </div>
             <!--Service Block-->
@@ -119,7 +119,7 @@
                 <div class="inner-box">
                     <div class="bottom-curve"></div>
                     <div class="icon-box"><span class="flaticon-development"></span></div>
-                    <h6><a href="seo.html">seo & content <br>writing</a></h6>
+                    <h6><a href="{{ route('site.services.seo') }}">seo & content <br>writing</a></h6>
                 </div>
             </div>
             <!--Service Block-->
@@ -127,7 +127,7 @@
                 <div class="inner-box">
                     <div class="bottom-curve"></div>
                     <div class="icon-box"><span class="flaticon-app-development"></span></div>
-                    <h6><a href="app-development.html">App <br>Development</a></h6>
+                    <h6><a href="{{ route('site.services.appdevelopment') }}">App <br>Development</a></h6>
                 </div>
             </div>
             <!--Service Block-->
@@ -135,7 +135,7 @@
                 <div class="inner-box">
                     <div class="bottom-curve"></div>
                     <div class="icon-box"><span class="flaticon-ui"></span></div>
-                    <h6><a href="ui-designing.html">Ui/UX <br>designing</a></h6>
+                    <h6><a href="{{ route('site.services.uidesigning') }}">Ui/UX <br>designing</a></h6>
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
                         <div class="since"><span class="txt">Since <br>2008</span></div>
                     </div>
                     <div class="link-box">
-                        <a class="theme-btn btn-style-one" href="about.html">
+                        <a class="theme-btn btn-style-one" href="{{ route('site.about') }}">
                             <i class="btn-curve"></i>
                             <span class="btn-title">Discover More</span>
                         </a>
@@ -200,7 +200,7 @@
                         <div class="title">
                             <h3>agency that gets <br>excited about</h3>
                         </div>
-                        <div class="more-link"><a href="about.html">Read More</a></div>
+                        <div class="more-link"><a href="{{ route('site.about') }}">Read More</a></div>
                     </div>
                 </div>
             </div>
@@ -454,16 +454,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-1.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-1.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Kevin martin</a></h5>
+                        <h5><a href="#">Kevin martin</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -473,16 +473,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-2.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-2.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Jessica Brown</a></h5>
+                        <h5><a href="#">Jessica Brown</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -492,16 +492,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-3.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-3.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">John Albert</a></h5>
+                        <h5><a href="#">John Albert</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -511,16 +511,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-4.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-4.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Rose ford</a></h5>
+                        <h5><a href="#">Rose ford</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -530,16 +530,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-5.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-5.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Mike Hardson</a></h5>
+                        <h5><a href="#">Mike Hardson</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -548,35 +548,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-1.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-1.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Kevin martin</a></h5>
-                        <div class="designation">Designer</div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Team-->
-            <div class="team-block">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-2.jpg" alt=""></a>
-                        <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="lower-box">
-                        <h5><a href="index.html#">Jessica Brown</a></h5>
+                        <h5><a href="#">Kevin martin</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -586,16 +567,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-3.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-2.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">John Albert</a></h5>
+                        <h5><a href="#">Jessica Brown</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -605,16 +586,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-4.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-3.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Rose ford</a></h5>
+                        <h5><a href="#">John Albert</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -624,16 +605,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-5.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-4.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Mike Hardson</a></h5>
+                        <h5><a href="#">Rose ford</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -643,16 +624,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-1.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-5.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Kevin martin</a></h5>
+                        <h5><a href="#">Mike Hardson</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -662,16 +643,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-2.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-1.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Jessica Brown</a></h5>
+                        <h5><a href="#">Kevin martin</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -681,16 +662,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-3.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-2.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">John Albert</a></h5>
+                        <h5><a href="#">Jessica Brown</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -700,16 +681,16 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-4.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-3.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Rose ford</a></h5>
+                        <h5><a href="#">John Albert</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -719,16 +700,35 @@
             <div class="team-block">
                 <div class="inner-box">
                     <div class="image-box">
-                        <a href="about.html"><img src="images/resource/team-5.jpg" alt=""></a>
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-4.jpg" alt=""></a>
                         <ul class="social-links clearfix">
-                            <li><a href="index.html#"><span class="fab fa-facebook-square"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="index.html#"><span class="fab fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
                         </ul>
                     </div>
                     <div class="lower-box">
-                        <h5><a href="index.html#">Mike Hardson</a></h5>
+                        <h5><a href="#">Rose ford</a></h5>
+                        <div class="designation">Designer</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Team-->
+            <div class="team-block">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <a href="{{ route('site.about') }}"><img src="images/resource/team-5.jpg" alt=""></a>
+                        <ul class="social-links clearfix">
+                            <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="lower-box">
+                        <h5><a href="#">Mike Hardson</a></h5>
                         <div class="designation">Designer</div>
                     </div>
                 </div>
@@ -757,16 +757,16 @@
         <div class="auto-container">
             <!--Sponsors Carousel-->
             <div class="sponsors-carousel owl-theme owl-carousel">
-                <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="images/clients/1.png" alt=""></a></figure></div>
-                <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="images/clients/2.png" alt=""></a></figure></div>
-                <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="images/clients/3.png" alt=""></a></figure></div>
-                <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="images/clients/4.png" alt=""></a></figure></div>
-                <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="images/clients/5.png" alt=""></a></figure></div>
-                <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="images/clients/1.png" alt=""></a></figure></div>
-                <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="images/clients/2.png" alt=""></a></figure></div>
-                <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="images/clients/3.png" alt=""></a></figure></div>
-                <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="images/clients/4.png" alt=""></a></figure></div>
-                <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="images/clients/5.png" alt=""></a></figure></div>
+                <div class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></div>
+                <div class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></div>
+                <div class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></div>
+                <div class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></div>
+                <div class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></div>
+                <div class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></div>
+                <div class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></div>
+                <div class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></div>
+                <div class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></div>
+                <div class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></div>
             </div>
         </div>
     </div>
@@ -885,7 +885,7 @@
             <div class="shape-2 wow fadeInDown" data-wow-delay="0ms" data-wow-duration="1500ms"></div>
             <h2>Let's Get Your Project <br>Started!</h2>
             <div class="link-box">
-                <a class="theme-btn btn-style-two" href="about.html">
+                <a class="theme-btn btn-style-two" href="{{ route('site.about') }}">
                     <i class="btn-curve"></i>
                     <span class="btn-title">Contact with us</span>
                 </a>
