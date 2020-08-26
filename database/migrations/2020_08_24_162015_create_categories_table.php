@@ -19,6 +19,10 @@ class CreateCategoriesTable extends Migration
             $table->string('title');
             $table->timestamps();
         });
+
+        Schema::create('portfolios', function (Blueprint $table) {
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');;
+        });
     }
 
     /**
@@ -28,6 +32,10 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
+        Schema::create('portfolios', function (Blueprint $table) {
+            $table->dropForeign('category_id');
+        });
         Schema::dropIfExists('categories');
+        
     }
 }
