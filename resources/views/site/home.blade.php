@@ -306,10 +306,10 @@
                         <a href="/storage/upload/portfolio{{ $portfolio->id }}/cover.jpg" class="lightbox-image overlay-box" data-fancybox="gallery"></a>
                         <div class="cap-box">
                             <div class="cap-inner">
-                                <div class="cat"><span>{{ $portfolio->title }}</span></div>
+                                <div class="cat"><span>{{ $portfolio->category->title }}</span></div>
                                 <div class="title"><h5>
                                     <a href="{{ route('site.portfolio.show', $portfolio->slug) }}">
-                                        {{ strip_tags($portfolio->description) }}
+                                        {{ $portfolio->title }}
                                     </a>
                                 </h5></div>
                             </div>
