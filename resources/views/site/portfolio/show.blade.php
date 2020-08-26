@@ -49,7 +49,7 @@
                         <ul class="info">
                             <li><strong>Clients:</strong> <br>{{ $portfolio->client }} </li>
                             <li><strong>Category:</strong> <br>{{ $portfolio->category->title }}</li>
-                            <li><strong>Date:</strong> <br>{{ date("F Y", $portfolio->begin) }} <br>{{ date("F Y", $portfolio->end) }}</li>
+                            <li><strong>Date:</strong> <br>{{ date("F Y", strtotime($portfolio->begin)) }} <br>{{ date("F Y", strtotime($portfolio->end)) }}</li>
                         </ul>
                     </div>
                 </div>

@@ -35,7 +35,7 @@
         </div>
         <div class="col-9">
             <p><b>Заказчик:</b> {{ $portfolio->client }}</p>
-            <p><b>Дата разработки:</b> {{ date("F Y", $portfolio->begin) }} - {{ date("F Y", $portfolio->end) }}</p>
+            <p><b>Дата разработки:</b> {{ date("F Y", strtotime($portfolio->begin)) }} - {{ date("F Y", strtotime($portfolio->end)) }}</p>
             <p><b>Описание:</b></p>
             <p>{{ strip_tags($portfolio->description) }}</p>
         </div>

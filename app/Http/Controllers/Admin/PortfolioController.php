@@ -23,13 +23,12 @@ class PortfolioController extends Controller
     }
 
     public function store(Request $request) {
-        $data = $request->all();
-        $validator = Validator::make($data, [
+        $validator = Validator::make($request->all(), [
             'slug' => 'required|unique:portfolios,slug|max:255',
             'title' => 'required',
             'client' => 'required',
-            'begin' => 'required|date_format:m/d/Y',
-            'end' => 'required|date_format:m/d/Y',
+            'begin' => 'required|date_format:Y-m-d',
+            'end' => 'required|date_format:Y-m-d',
             'description' => 'required',
             'cover' => 'image'
         ]);
@@ -38,9 +37,7 @@ class PortfolioController extends Controller
             return redirect()->route('admin.portfolio.create')->withErrors($validator)->withInput();
         }
 
-        $data['begin'] = \Carbon\Carbon::createFromFormat('m/d/Y', $data['begin'])->timestamp;
-        $data['end'] = \Carbon\Carbon::createFromFormat('m/d/Y', $data['end'])->timestamp;
-        $portfolio = new Portfolio($data);
+        $portfolio = new Portfolio($request->all());
         $portfolio->save();
         if ($request->hasFile('cover')) {
             $path = 'upload/portfolio' . $portfolio->id;
@@ -61,8 +58,8 @@ class PortfolioController extends Controller
             'slug' => 'required|max:255',
             'title' => 'required',
             'client' => 'required',
-            'begin' => 'required|date_format:m/d/Y',
-            'end' => 'required|date_format:m/d/Y',
+            'begin' => 'required|date_format:Y-m-d',
+            'end' => 'required|date_format:Y-m-d',
             'description' => 'required',
             'cover' => 'image'
         ]);
@@ -71,10 +68,8 @@ class PortfolioController extends Controller
             return redirect()->route('admin.portfolio.edit', ['id' => $id])->withErrors($validator)->withInput();
         }
 
-        $data['begin'] = \Carbon\Carbon::createFromFormat('m/d/Y', $data['begin'])->timestamp;
-        $data['end'] = \Carbon\Carbon::createFromFormat('m/d/Y', $data['end'])->timestamp;
         $portfolio = Portfolio::findOrFail($id);
-        $portfolio->fill($data)->save();
+        $portfolio->fill($request->all())->save();
         if ($request->hasFile('cover')) {
             $path = 'upload/portfolio' . $id;
             $request->file('cover')->storeAs($path, 'cover.jpg', 'public');

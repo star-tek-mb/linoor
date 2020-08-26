@@ -72,6 +72,7 @@
     <script>
         CKEDITOR.replace('description');
         $('.input-daterange').datepicker({
+            format: "yyyy-mm-dd",
             viewMode: "months", 
             minViewMode: "months"
         });

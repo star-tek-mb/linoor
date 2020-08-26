@@ -40,7 +40,7 @@ class BlogController extends Controller
             $path = 'upload/blog' . $blog->id;
             $request->file('cover')->storeAs($path, 'cover.jpg', 'public');
         }
-        return redirect()->route('admin.blog.index', ['id' => $blog->id]);
+        return redirect()->route('admin.blog.index');
     }
 
     public function edit($id)
